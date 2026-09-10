@@ -1,0 +1,49 @@
+.bounce-cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.bounce-card {
+  position: absolute;
+  width: min(340px, 90vw);
+  min-height: 350px;
+  transform-origin: center center;
+}
+
+.projects-bounce .project-card {
+  height: 100%;
+  min-height: 350px;
+  background-color: #111;
+  border-color: #333333;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+.projects-bounce .project-card:hover {
+  transform: none;
+}
+
+.projects-bounce .bounce-card:nth-child(2) .project-card {
+  border-color: #ff4fa3;
+}
+
+@media (max-width: 1024px) {
+  .bounce-cards-container {
+    height: auto !important;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .bounce-card {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    transform: none !important;
+  }
+
+  .projects-bounce .project-card {
+    min-height: auto;
+  }
+}
