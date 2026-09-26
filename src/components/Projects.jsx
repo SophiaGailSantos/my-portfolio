@@ -1,5 +1,6 @@
 import BounceCards from "./BounceCards";
 import ProjectCard from "./ProjectCard";
+import Reveal from "./Reveal";
 
 function Projects() {
     const projects = [
@@ -32,9 +33,13 @@ function Projects() {
     return (
     <section id="projects">
       <div className="projects-content">
-        <p className="section-title">MY PROJECTS</p>
+        <Reveal as="p" className="section-title">
+          MY PROJECTS
+        </Reveal>
 
-        <h2>Things I've Built</h2>
+        <Reveal as="h2" delay={90}>
+          Things I've Built
+        </Reveal>
 
         <BounceCards
           className="projects-list projects-bounce"

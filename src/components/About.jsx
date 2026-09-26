@@ -1,4 +1,5 @@
 import SpotlightCard from "./SpotlightCard";
+import Reveal from "./Reveal";
 
 function About(){
     return (
@@ -7,17 +8,21 @@ function About(){
                 className="about-content"
                 spotlightColor="rgba(255, 79, 163, 0.22)"
             >
-                <p className="section-title">ABOUT ME</p>
+                <Reveal as="p" className="section-title">
+                    ABOUT ME
+                </Reveal>
 
-                    <h2>Nice to meet you!</h2>
-                
-                <p>
+                <Reveal as="h2" delay={90}>
+                    Nice to meet you!
+                </Reveal>
+
+                <Reveal as="p" delay={150}>
                     I'm a fourth-year Computer Science student with a passion for creating clean, user-friendly websites and digital experiences.
-                </p>
+                </Reveal>
 
-                <p>
+                <Reveal as="p" delay={210}>
                     I enjoy combining design and technology to create interfaces that are both visually appealing and easy to use.
-                </p>
+                </Reveal>
             </SpotlightCard>
         </section>
     )
